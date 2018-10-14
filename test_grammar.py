@@ -36,4 +36,13 @@ def test_noun_phrases_and_proper_names(sentence_input):
     trees = parser.parse(sentence_input.lower().split())
     assert(next(trees))
 
+@pytest.mark.parametrize("sentence_input", [
+    "il la regarde"])
+def test_direct_object_pronouns(sentence_input):
+
+    parser = BottomUpChartParser(grammar)
+
+    trees = parser.parse(sentence_input.lower().split())
+    assert(next(trees))
+
 #"Le chat mange le poisson",

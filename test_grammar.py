@@ -26,7 +26,9 @@ def test_subject_verb_agreement(sentence_input):
     "le chat",
     "la television",
     "les chats",
-    "les televisions"])
+    "les televisions",
+    "Jackie",
+    "Montreal"])
 def test_noun_phrases_and_proper_names(sentence_input):
 
     parser = BottomUpChartParser(grammar)

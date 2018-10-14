@@ -1,0 +1,20 @@
+S -> VP NP
+
+VP -> VP-1s | VP-2s | VP-3s | VP-1p | VP-2p | VP-3p
+VP-1s -> "Je" V-1s
+VP-2s -> "Tu" V-2s
+VP-3s -> "Il" V-3s
+VP-1p -> "Nous" V-1p
+VP-2p -> "Vous" V-2p
+VP-3p -> "Ils" V-3p
+
+V -> V-stem V-1s | V-stem V-2s | V-stem V-3s | V-stem V-1p | V-stem V-2p | V-stem V-3p
+V-stem -> "mang" | "regard"
+V-1s -> V "e"
+V-2s -> V "es"
+V-3s -> V "e"
+V-1p -> V "ons"
+V-2p -> V "ez"
+V-3p -> V "ent"
+
+NP -> "la télévision" | "le chat"

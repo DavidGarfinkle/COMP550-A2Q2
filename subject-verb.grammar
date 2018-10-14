@@ -1,12 +1,17 @@
-S -> VP NP
+S -> S-V NP | NP
+
+S-V -> "je" VP-1s | "tu" VP-2s | Sub-3s VP-3s | "nous" VP-1p | "vous" VP-2p | Sub-3p VP-3p
+
+Sub-3s -> "il" | NP-s
+Sub-3p -> "ils" | NP-p
 
 VP -> VP-1s | VP-2s | VP-3s | VP-1p | VP-2p | VP-3p
-VP-1s -> "je" V-1s
-VP-2s -> "tu" V-2s
-VP-3s -> "il" V-3s
-VP-1p -> "nous" V-1p
-VP-2p -> "vous" V-2p
-VP-3p -> "ils" V-3p
+VP-1s -> V-1s
+VP-2s -> V-2s
+VP-3s -> V-3s
+VP-1p -> V-1p
+VP-2p -> V-2p
+VP-3p -> V-3p
 
 V-1s -> "mange" | "regarde"
 V-2s -> "manges" | "regardes"
@@ -15,4 +20,11 @@ V-1p -> "mangons" | "regardons"
 V-2p -> "mangez" | "regardez"
 V-3p -> "mangent" | "regardent" 
 
-NP -> "la" "television" | "le" "chat" | "le" "poisson"
+
+NP -> NP-s | NP-p
+NP-s -> N-s | PN
+NP-p -> N-p 
+
+N-s -> "la" "television" | "le" "chat" | "le" "poisson"
+N-p -> "les" "televisions" | "les" "chats" | "les" "poissons"
+PN -> "montreal" | "jackie"

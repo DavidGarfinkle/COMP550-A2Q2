@@ -22,5 +22,16 @@ def test_subject_verb_agreement(sentence_input):
     assert(next(trees))
 
 
+@pytest.mark.parametrize("sentence_input", [
+    "le chat",
+    "la television",
+    "les chats",
+    "les televisions"])
+def test_noun_phrases_and_proper_names(sentence_input):
+
+    parser = BottomUpChartParser(grammar)
+
+    trees = parser.parse(sentence_input.lower().split())
+    assert(next(trees))
 
 #"Le chat mange le poisson",
